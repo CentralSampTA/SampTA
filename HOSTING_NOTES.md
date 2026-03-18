@@ -26,12 +26,12 @@ I'd recommend using Namecheap or Cloudflare to register it since they don't mark
 
 ## Where to host it
 
-Good news: we can host this for free pretty much anywhere. All these support HTTPS and custom domains.
+Good news: we can host this for free pretty much anywhere.
 
 - **GitHub Pages (Free / Low effort)**: Probably the easiest. Just push the repo and click "enable Pages". Anyone can edit by making a commit.
 - **Vercel or Netlify (Free / Low effort)**: The best choice if we go with the Hugo version. It'll automatically build and deploy every time someone updates a markdown file.
 - **AWS S3 + CloudFront (Free-ish / Medium effort)**: Fits in the free tier forever, but takes a bit more setup. 
-- **KU University (Free / ? effort)**: We could use a KU subdomain (like `sampta.ku.dk`). Only catch is they might force us to use their CMS, which could be annoying.
+- **KU University (Free / ? effort)**: We could use a KU subdomain (like `sampta.ku.dk`). Only catch is they might force us to use their CMS, which could be annoying. No need to buy the domain.
 
 **Bottom line:** Hosting is basically free across the board. We just need to pay the ~€10/yr for the domain name.
 
