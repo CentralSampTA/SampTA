@@ -1,0 +1,83 @@
+{{ define "header" }}
+<section class="page-header hero">
+  <div class="container">
+    <h1>SampTA</h1>
+    <p class="subtitle">
+      International Conference on Sampling Theory and Applications
+    </p>
+  </div>
+</section>
+{{ end }}
+
+{{ define "main" }}
+
+<div class="announcement">
+  <!-- PLACEHOLDER: Update with the next upcoming conference details when announced -->
+  <strong>Most Recent:</strong>
+  <a href="https://sampta25.univie.ac.at">SampTA 2025</a> — Vienna, Austria, July 28 – August 1, 2025.
+  Next conference to be announced.
+  <a href="{{ "/upcoming/" | relURL }}">Details →</a>
+</div>
+
+{{ .Content }}
+
+<hr class="section-divider">
+
+<section>
+  <h2>Recent Conferences</h2>
+  <div class="quick-links limit-mobile">
+
+    <div class="card">
+      <h3>SampTA 2025</h3>
+      <p>Vienna, Austria<br>July 28 – August 1, 2025</p>
+      <p><a href="https://sampta25.univie.ac.at" target="_blank" rel="noopener">Conference website →</a></p>
+    </div>
+
+    <div class="card">
+      <h3>SampTA 2023</h3>
+      <p>New Haven, U.S.A. (Yale University)<br>July 10–14, 2023</p>
+      <p><a href="https://sampta2023.github.io" target="_blank" rel="noopener">Conference website →</a></p>
+    </div>
+
+    <div class="card">
+      <h3>SampTA 2019</h3>
+      <p>Bordeaux, France<br>July 8–12, 2019</p>
+      <p><a href="https://sampta2019.sciencesconf.org" target="_blank" rel="noopener">Conference website →</a></p>
+    </div>
+
+    <div class="card">
+      <h3>SampTA 2017</h3>
+      <p>Tallinn, Estonia<br>July 3–7, 2017</p>
+      <p><a href="https://web.archive.org/web/20170822202604/http://sites.ieee.org/estonia/2017/02/07/sampta-2017/" target="_blank" rel="noopener">Conference website →</a></p>
+    </div>
+
+    <div class="card">
+      <h3>SampTA 2015</h3>
+      <p>Washington, D.C., U.S.<br>May 25–29, 2015</p>
+      <p><a href="https://www.american.edu/cas/mathstat/sampta2015/" target="_blank" rel="noopener">Conference website →</a></p>
+    </div>
+
+    <div class="card">
+      <h3>SampTA 2013</h3>
+      <p>Bremen, Germany<br>July 1–5, 2013</p>
+      <p><a href="https://nuhagphp.univie.ac.at/event_NEW/make.php?event=sampta2013" target="_blank" rel="noopener">Conference website →</a></p>
+    </div>
+
+  </div>
+  <p><a href="{{ "/conferences/" | relURL }}">View all conferences →</a></p>
+</section>
+
+<hr class="section-divider">
+
+<section>
+  <h2>Quick Links</h2>
+  <ul>
+    <li><a href="{{ "/about/" | relURL }}">About SampTA</a> — history and scope of the conference series</li>
+    <li><a href="{{ "/conferences/" | relURL }}">Conference archive</a> — all meetings from 1995 to the present</li>
+    <li><a href="{{ "/committee/" | relURL }}">Steering committee</a> — members and governance</li>
+    <li><a href="{{ "/resources/" | relURL }}">Resources &amp; proceedings</a> — publications and related materials</li>
+    <li><a href="{{ "/contact/" | relURL }}">Contact</a> — reach the organizers</li>
+  </ul>
+</section>
+
+{{ end }}

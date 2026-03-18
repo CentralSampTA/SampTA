@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — SampTA{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  <link rel="icon" href="{{ "images/favicon.ico" | relURL }}" sizes="any">
+  <link rel="icon" href="{{ "images/favicon.svg" | relURL }}" type="image/svg+xml">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="{{ "/" | relURL }}" class="site-logo"><img src="{{ "images/logo.svg" | relURL }}" alt="" class="site-logo-img" onerror="this.style.display='none'">SampTA<span>Sampling Theory &amp; Applications</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      </button>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL | relURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  {{ block "header" . }}{{ end }}
+
+  <main>
+    <div class="container">
+      {{ block "main" . }}{{ end }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; SampTA Conference Series. All rights reserved.</p>
+      <p>
+        <a href="{{ "/contact/" | relURL }}">Contact</a> ·
+        <a href="https://en.wikipedia.org/wiki/SampTA" target="_blank" rel="noopener">Wikipedia</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="{{ "js/main.js" | relURL }}"></script>
+</body>
+</html>

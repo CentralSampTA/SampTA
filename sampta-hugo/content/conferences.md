@@ -1,0 +1,35 @@
+---
+title: "Conference Archive"
+subtitle: "All SampTA meetings from 1995 to the present"
+description: "Archive of all SampTA conferences from 1995 to the present, with dates, locations, and links to individual conference websites."
+---
+
+The table below lists all SampTA conferences in reverse chronological order. Where available, links point to the official conference website. Some early websites are available only through the [Wayback Machine](https://web.archive.org/).
+
+<!-- To add a new conference: copy a <tr> block below and paste as the first row in <tbody>. Keep newest first. -->
+<div class="conference-table-wrapper">
+<table class="conference-table">
+<thead>
+<tr><th>Year</th><th>Dates</th><th>Location</th><th>Website</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>2025</strong></td><td data-label="Dates:">July 28 – August 1</td><td data-label="Location:">Vienna, Austria</td><td data-label="Website:"><a href="https://sampta25.univie.ac.at" target="_blank" rel="noopener">sampta25.univie.ac.at</a></td><td data-label=""><span class="note">University of Vienna</span></td></tr>
+<tr><td><strong>2023</strong></td><td data-label="Dates:">July 10–14</td><td data-label="Location:">New Haven, U.S.A.</td><td data-label="Website:"><a href="https://sampta2023.github.io" target="_blank" rel="noopener">sampta2023.github.io</a></td><td data-label=""><span class="note">Yale University</span></td></tr>
+<tr><td><strong>2019</strong></td><td data-label="Dates:">July 8–12</td><td data-label="Location:">Bordeaux, France</td><td data-label="Website:"><a href="https://sampta2019.sciencesconf.org" target="_blank" rel="noopener">sampta2019.sciencesconf.org</a></td><td data-label=""><span class="note">University of Bordeaux</span></td></tr>
+<tr><td><strong>2017</strong></td><td data-label="Dates:">July 3–7</td><td data-label="Location:">Tallinn, Estonia</td><td data-label="Website:"><a href="https://web.archive.org/web/20170822202604/http://sites.ieee.org/estonia/2017/02/07/sampta-2017/" target="_blank" rel="noopener">Archived (IEEE Estonia)</a></td><td data-label=""><span class="note">Tallinn University of Technology</span></td></tr>
+<tr><td><strong>2015</strong></td><td data-label="Dates:">May 25–29</td><td data-label="Location:">Washington, D.C., U.S.</td><td data-label="Website:"><a href="https://www.american.edu/cas/mathstat/sampta2015/" target="_blank" rel="noopener">american.edu/sampta2015</a></td><td data-label=""><span class="note">American University</span></td></tr>
+<tr><td><strong>2013</strong></td><td data-label="Dates:">July 1–5</td><td data-label="Location:">Bremen, Germany</td><td data-label="Website:"><a href="https://nuhagphp.univie.ac.at/event_NEW/make.php?event=sampta2013" target="_blank" rel="noopener">NuHAG event page</a></td><td data-label=""><span class="note">Jacobs University Bremen</span></td></tr>
+<tr><td><strong>2011</strong></td><td data-label="Dates:">May 2–6</td><td data-label="Location:">Singapore</td><td data-label="Website:"><a href="https://web.archive.org/web/20110826161247/http://sampta2011.ntu.edu.sg/" target="_blank" rel="noopener">Archived (NTU)</a></td><td data-label=""><span class="note">Nanyang Technological University</span></td></tr>
+<tr><td><strong>2009</strong></td><td data-label="Dates:">May 18–22</td><td data-label="Location:">Marseille, France</td><td data-label="Website:"><a href="https://web.archive.org/web/20150520045321/http://www.latp.univ-mrs.fr/SAMPTA09/" target="_blank" rel="noopener">Archived</a></td><td data-label=""><span class="note">TIMA, INP Grenoble and LATP, Université de Provence</span></td></tr>
+<tr><td><strong>2007</strong></td><td data-label="Dates:">June 1–5</td><td data-label="Location:">Thessaloniki, Greece</td><td data-label="Website:"><a href="https://web.archive.org/web/20110506192714/http://sampta07.web.auth.gr/" target="_blank" rel="noopener">Archived</a></td><td data-label=""><span class="note">Aristotle University of Thessaloniki &amp; University of Macedonia</span></td></tr>
+<tr><td><strong>2005</strong></td><td data-label="Dates:">July 10–15</td><td data-label="Location:">Samsun, Turkey</td><td data-label="Website:"><a href="https://web.archive.org/web/20160422030810/http://sampta05.omu.edu.tr/" target="_blank" rel="noopener">Archived</a></td><td data-label=""><span class="note">Ondokuz Mayıs University</span></td></tr>
+<tr><td><strong>2003</strong></td><td data-label="Dates:">May 26–30</td><td data-label="Location:">Strobl, Austria</td><td data-label="Website:"><span class="text-muted" style="font-size:0.9em;">nuhag-old.univie.ac.at/SampTA03 (Offline)</span></td><td data-label=""><span class="note">University of Vienna</span></td></tr>
+<tr><td><strong>2001</strong></td><td data-label="Dates:">May 13–17</td><td data-label="Location:">Orlando, U.S.</td><td data-label="Website:"><a href="https://archive.ph/20121215022728/http://www.math.ucf.edu/sampta/" target="_blank" rel="noopener">Archived (UCF)</a></td><td data-label=""><span class="note">University of Central Florida</span></td></tr>
+<tr><td><strong>1999</strong></td><td data-label="Dates:">August 11–14</td><td data-label="Location:">Loen, Norway</td><td data-label="Website:"><a href="https://web.archive.org/web/20110506181713/http://www.math.ntnu.no/conferences/sampta/sampta.html" target="_blank" rel="noopener">Archived (NTNU)</a></td><td data-label=""><span class="note">Workshop</span></td></tr>
+<tr><td><strong>1997</strong></td><td data-label="Dates:">July 16–19</td><td data-label="Location:">Aveiro, Portugal</td><td data-label="Website:"><span class="text-muted" style="font-size:0.9em;">ieeta.pt/Sampta97 (Offline)</span></td><td data-label=""><span class="note">Workshop · University of Aveiro</span></td></tr>
+<tr><td><strong>1995</strong></td><td data-label="Dates:">September 20–22</td><td data-label="Location:">Riga, Latvia</td><td data-label="Website:"><span class="text-muted" style="font-size:0.9em;">ciel.pl/Sampta95 (Offline)</span></td><td data-label=""><span class="note">Inaugural workshop</span></td></tr>
+</tbody>
+</table>
+</div>
+
+*No conference was held in 2021 due to the COVID-19 pandemic. The series resumed in 2023.*

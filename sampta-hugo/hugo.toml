@@ -1,0 +1,48 @@
+# Hugo site configuration for SampTA Conference Series
+baseURL = "https://sampta.example.org/"  # PLACEHOLDER: Replace with actual site URL
+languageCode = "en"
+title = "SampTA — Sampling Theory and Applications"
+theme = ""  # No external theme — using custom layouts
+
+# Disable unused features for faster builds
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  description = "SampTA is a biennial interdisciplinary conference for mathematicians, engineers, and applied scientists."
+  # PLACEHOLDER: Update contact email
+  contactEmail = "sampta@example.org"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Conferences"
+    url = "/conferences/"
+    weight = 3
+  [[menu.main]]
+    name = "Upcoming"
+    url = "/upcoming/"
+    weight = 4
+  [[menu.main]]
+    name = "Committee"
+    url = "/committee/"
+    weight = 5
+  [[menu.main]]
+    name = "Resources"
+    url = "/resources/"
+    weight = 6
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 7
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
