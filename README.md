@@ -54,8 +54,3 @@ python3 -m http.server 8080
 Open `http://localhost:8080/admin/` to test the CMS locally.
 
 ---
-
-## 🤖 AI Agent Rules (`.agent_instructions.md`)
-To prevent accidental build minute usage, all AI agents (Antigravity, Cursor, etc.) are instructed to:
-- Always work on the `dev` branch.
-- Always append ` [skip ci]` to commit messages unless explicitly told otherwise.
