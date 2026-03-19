@@ -1,7 +1,7 @@
 ---
-title: "Upcoming Conference"
-subtitle: "SampTA 27 — Utrecht, July 2027"
-description: "Details about the next SampTA conference — SampTA 27 in Utrecht."
+title: Upcoming Conference
+subtitle: SampTA 27 — Utrecht, July 2027
+description: Details about the next SampTA conference — SampTA 27 in Utrecht.
 ---
 
 <div class="card">
@@ -29,7 +29,7 @@ Francesca Bartolucci (TU Delft)<br>
 Geert Leus (TU Delft, Electrical Engineering)</p>
 
 <p><strong>Tech Chairs:</strong><br>
-Helmut Boelcskei, Geert Leus, Piya Pal, Gerlind Plonka, Jose Luis Romero, Palina Salanevich</p>
+Helmut Boelcskei, Geert Leus, Piya Pal, Gerlind Plonka, Jose Luis Romero, Palina Salanevich, test</p>
 </div>
 
 <!--more-->
