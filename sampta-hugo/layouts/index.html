@@ -11,15 +11,22 @@
 
 {{ define "main" }}
 
-<div class="announcement">
-  <!-- PLACEHOLDER: Update with the next upcoming conference details when announced -->
-  <strong>Most Recent:</strong>
-  <a href="https://sampta25.univie.ac.at">SampTA 2025</a> — Vienna, Austria, July 28 – August 1, 2025.
-  Next conference to be announced.
-  <a href="{{ "/upcoming/" | relURL }}">Details →</a>
-</div>
+<section class="upcoming-featured">
+  {{ with .Site.GetPage "/upcoming" }}
+  <div class="featured-event">
+    {{ .Summary }}
+    <p style="margin-top: 1rem;">
+      <a href="{{ .RelPermalink }}" class="btn">View full details →</a>
+    </p>
+  </div>
+  {{ end }}
+</section>
 
-{{ .Content }}
+<hr class="section-divider">
+
+<section>
+  {{ .Content }}
+</section>
 
 <hr class="section-divider">
 

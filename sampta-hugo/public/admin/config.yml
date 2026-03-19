@@ -1,0 +1,76 @@
+backend:
+  # Using GitHub for Vercel hosting. 
+  # Note: Requires setting up a GitHub OAuth app and linking it in Vercel.
+  name: github
+  repo: CentralSampTA/SampTA
+  branch: main
+  
+# Enable Git Large File Storage if you have big images/pdfs
+# publish_mode: editorial_workflow # (Uncomment to require review/PRs before publishing)
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  # --------------------------------------------------------
+  # Master Collection: Can edit everything
+  # --------------------------------------------------------
+  - name: "pages"
+    label: "Website Pages"
+    description: "Edit the core pages of the central SampTA website."
+    editor:
+      preview: false
+    files:
+      - label: "Upcoming Conference"
+        name: "upcoming"
+        file: "content/upcoming.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+      - label: "Homepage Intro"
+        name: "index"
+        file: "content/_index.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+      - label: "About Page"
+        name: "about"
+        file: "content/about.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+      - label: "Conferences Archive"
+        name: "conferences"
+        file: "content/conferences.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+      - label: "Committee"
+        name: "committee"
+        file: "content/committee.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+          - {label: "Description", name: "description", widget: "text", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+      - label: "Contact"
+        name: "contact"
+        file: "content/contact.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+      - label: "Resources"
+        name: "resources"
+        file: "content/resources.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}

@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (toggle && nav) {
     toggle.addEventListener('click', function () {
-      nav.classList.toggle('is-open');
-      var expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
+      var isOpen = nav.classList.contains('is-open');
+      nav.classList.toggle('is-open', !isOpen);
+      toggle.setAttribute('aria-expanded', String(!isOpen));
     });
 
     // Close nav when clicking a link (mobile)
@@ -23,10 +23,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Highlight active page in nav
-  var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  var path = window.location.pathname;
   document.querySelectorAll('.site-nav a').forEach(function (a) {
     var href = a.getAttribute('href');
-    if (href === currentPage) {
+    if (href && href !== '/' && path.indexOf(href) === 0) {
+      a.classList.add('active');
+    } else if (href === '/' && path === '/') {
       a.classList.add('active');
     }
   });

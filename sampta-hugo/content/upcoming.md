@@ -1,36 +1,35 @@
 ---
 title: "Upcoming Conference"
-subtitle: "To be announced"
-description: "Details about the next SampTA conference."
+subtitle: "SampTA 27 — Utrecht, July 2027"
+description: "Details about the next SampTA conference — SampTA 27 in Utrecht."
 ---
 
-<!-- Update this entire page when a new conference is announced. -->
-
 <div class="card">
-<h2 style="margin-top:0;">Next Conference — TBA</h2>
-<p>
-<!-- PLACEHOLDER: Replace this section with the next conference details once announced -->
-The next SampTA conference has not yet been announced.
-Check back here for updates, or follow the
-<a href="/contact/">contact page</a> for announcements.
-</p>
-</div>
+<h2 style="margin-top:0;">SampTA 27</h2>
 
-<hr class="section-divider">
+<!-- PLACEHOLDER IMAGE: Drop your image in static/images/sampta27-banner.jpg -->
+<p><img src="/images/sampta27-banner.jpg" alt="SampTA 27 Utrecht" style="width:100%; border-radius:6px; margin: 1rem 0; border: 1px solid var(--color-border-light);" onerror="this.style.display='none'"></p>
 
-## Most Recent Conference
-
-<div class="card">
-<h3 style="margin-top:0;">SampTA 2025</h3>
-<p><strong>15th International Conference on Sampling Theory and Applications</strong></p>
 <table style="border-collapse:collapse; margin:1rem 0;">
-<tr><td style="padding:0.4rem 1.5rem 0.4rem 0; font-weight:600; color:var(--color-primary);">Dates</td><td style="padding:0.4rem 0;">July 28 – August 1, 2025</td></tr>
-<tr><td style="padding:0.4rem 1.5rem 0.4rem 0; font-weight:600; color:var(--color-primary);">Location</td><td style="padding:0.4rem 0;">Vienna, Austria</td></tr>
-<tr><td style="padding:0.4rem 1.5rem 0.4rem 0; font-weight:600; color:var(--color-primary);">Venue</td><td style="padding:0.4rem 0;">University of Vienna, Spitalgasse 2, 1090 Vienna</td></tr>
-<tr><td style="padding:0.4rem 1.5rem 0.4rem 0; font-weight:600; color:var(--color-primary);">Website</td><td style="padding:0.4rem 0;"><a href="https://sampta25.univie.ac.at" target="_blank" rel="noopener">sampta25.univie.ac.at</a></td></tr>
+<tr><td style="padding:0.4rem 1.5rem 0.4rem 0; font-weight:600; color:var(--color-primary);">Dates</td><td style="padding:0.4rem 0;">26-30.7.27</td></tr>
+<tr><td style="padding:0.4rem 1.5rem 0.4rem 0; font-weight:600; color:var(--color-primary);">Location</td><td style="padding:0.4rem 0;">Utrecht</td></tr>
+<tr><td style="padding:0.4rem 1.5rem 0.4rem 0; font-weight:600; color:var(--color-primary);">Website</td><td style="padding:0.4rem 0;"><strong><a href="https://example.com" target="_blank" rel="noopener">Visit the Official SampTA 27 Website →</a></strong></td></tr>
 </table>
+
+<h3>Organizing Committee</h3>
+<p><strong>General Chairs:</strong><br>
+Palina Salanevich (Utrecht University)<br>
+Sjoerd Dirksen (Utrecht University)</p>
+
+<p><strong>Local Organizers:</strong><br>
+Palina Salanevich (Utrecht University)<br>
+Sjoerd Dirksen (Utrecht University)<br>
+Tristan van Leeuwen (Utrecht University, CWI)<br>
+Francesca Bartolucci (TU Delft)<br>
+Geert Leus (TU Delft, Electrical Engineering)</p>
+
+<p><strong>Tech Chairs:</strong><br>
+Helmut Boelcskei, Geert Leus, Piya Pal, Gerlind Plonka, Jose Luis Romero, Palina Salanevich</p>
 </div>
 
-SampTA 2025 was the 15th International Conference on Sampling Theory and Applications, held from **July 28 to August 1, 2025**, at the **University of Vienna**.
-
-The conference brought together researchers to exchange recent advances in sampling theory and to explore new trends and directions in application areas including signal and image processing, compressed sensing, coding theory, control theory, harmonic analysis, and computational neuroscience.
+<!--more-->
