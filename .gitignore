@@ -1,0 +1,10 @@
+# Ignore generated Hugo files
+sampta-hugo/public/
+sampta-hugo/resources/_gen/
+sampta-hugo/.hugo_build.lock
+
+# macOS system files
+.DS_Store
+
+# Notes
+HOSTING_NOTES.md

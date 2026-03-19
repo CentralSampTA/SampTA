@@ -23,7 +23,7 @@ collections:
     files:
       - label: "Upcoming Conference"
         name: "upcoming"
-        file: "content/upcoming.md"
+        file: "sampta-hugo/content/upcoming.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string", hint: "e.g. SampTA 27 — Utrecht, July 2027"}

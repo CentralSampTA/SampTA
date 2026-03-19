@@ -23,7 +23,7 @@ collections:
     files:
       - label: "Upcoming Conference"
         name: "upcoming"
-        file: "content/upcoming.md"
+        file: "sampta-hugo/content/upcoming.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
@@ -32,7 +32,7 @@ collections:
 
       - label: "Homepage Intro"
         name: "index"
-        file: "content/_index.md"
+        file: "sampta-hugo/content/_index.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
@@ -40,21 +40,21 @@ collections:
 
       - label: "About Page"
         name: "about"
-        file: "content/about.md"
+        file: "sampta-hugo/content/about.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
 
       - label: "Conferences Archive"
         name: "conferences"
-        file: "content/conferences.md"
+        file: "sampta-hugo/content/conferences.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
 
       - label: "Committee"
         name: "committee"
-        file: "content/committee.md"
+        file: "sampta-hugo/content/committee.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
@@ -63,14 +63,14 @@ collections:
 
       - label: "Contact"
         name: "contact"
-        file: "content/contact.md"
+        file: "sampta-hugo/content/contact.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
 
       - label: "Resources"
         name: "resources"
-        file: "content/resources.md"
+        file: "sampta-hugo/content/resources.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}

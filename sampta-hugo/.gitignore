@@ -1,0 +1,11 @@
+# Hugo Output Data
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# macOS system files
+.DS_Store
+.*.swp
+
+# Personal notes (not to be leaked)
+HOSTING_NOTES.md
