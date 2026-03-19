@@ -17,7 +17,7 @@ collections:
     label: "Website Pages"
     description: "Edit the core pages of the central SampTA website."
     editor:
-      preview: false
+      preview: true
     files:
       - label: "Homepage Intro"
         name: "index"
