@@ -1,9 +1,5 @@
-# --------------------------------------------------------
-# This config restricts users so they ONLY see the "Upcoming" page
-# --------------------------------------------------------
 backend:
-  name: github
-  repo: CentralSampTA/SampTA
+  name: git-gateway
   branch: main
 
 # To ensure conference admins don't accidentally break the live site, 

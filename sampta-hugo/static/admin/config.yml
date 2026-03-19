@@ -1,8 +1,5 @@
 backend:
-  # Using GitHub for Vercel hosting. 
-  # Note: Requires setting up a GitHub OAuth app and linking it in Vercel.
-  name: github
-  repo: CentralSampTA/SampTA
+  name: git-gateway
   branch: main
   
 # Enable Git Large File Storage if you have big images/pdfs
