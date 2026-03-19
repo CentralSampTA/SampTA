@@ -6,7 +6,7 @@ backend:
 # To ensure conference admins don't accidentally break the live site, 
 # you can flip this flag on. It makes their changes save as Github 
 # Pull Requests ("Drafts") rather than pushing live immediately.
-# publish_mode: editorial_workflow 
+publish_mode: editorial_workflow 
 
 media_folder: "static/images"
 public_folder: "/images"

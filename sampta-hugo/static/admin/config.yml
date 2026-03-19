@@ -4,7 +4,7 @@ backend:
   branch: main
   
 # Enable Git Large File Storage if you have big images/pdfs
-# publish_mode: editorial_workflow # (Uncomment to require review/PRs before publishing)
+publish_mode: editorial_workflow # (Uncomment to require review/PRs before publishing)
 
 media_folder: "static/images"
 public_folder: "/images"
