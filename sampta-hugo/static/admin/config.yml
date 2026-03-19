@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: CentralSampTA/SampTA
   branch: main
   
 # Enable Git Large File Storage if you have big images/pdfs
