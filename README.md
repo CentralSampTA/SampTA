@@ -9,7 +9,7 @@ The project uses a **Decoupled Hugo Architecture** to strictly isolate conferenc
 The website is split into two independent GitHub repositories:
 
 1.  **Main Website (`SampTA`)**: Contains the Hugo engine, themes, layouts, and core pages (About, Committee, etc.).
-2.  **Upcoming Content (`site-upcoming-content`)**: A dedicated repository for the "Upcoming Conference" text and images. This allows conference organizers to edit their content without ever touching the main site code.
+2.  **Upcoming Content (`site-upcoming-content`)**: A dedicated repository for the "Upcoming Conference" text and images. This allows conference organizers to edit their content without ever touching the main site code. Keep this as a separate sibling clone at `/Users/deprave/Documents/site-upcoming-content`, not inside the main website repo.
 
 ---
 
@@ -48,7 +48,7 @@ Open `http://localhost:1313`. Note that the "Upcoming" section will pull from th
 
 ### 2. Content CMS Portal
 ```bash
-cd site-upcoming-content
+cd ../site-upcoming-content
 python3 -m http.server 8080
 ```
 Open `http://localhost:8080/admin/` to test the CMS locally.

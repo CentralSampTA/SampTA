@@ -1,8 +1,8 @@
 {{ define "main" }}
 <div class="content-body">
-  {{ $url := "https://raw.githubusercontent.com/CentralSampTA/site-upcoming-content/main/content/upcoming.md" }}
+  {{ $url := .Site.Params.upcomingContentRawURL }}
   {{ with resources.GetRemote $url }}
-    {{ partial "remote-upcoming.html" (dict "raw" .Content "summaryOnly" false) }}
+    {{ partial "remote-upcoming.html" (dict "raw" .Content "summaryOnly" false "siteURL" $.Site.Params.upcomingContentSiteURL) }}
   {{ else }}
     <p>Loading upcoming conference details...</p>
   {{ end }}

@@ -11,6 +11,8 @@ disableKinds = ["taxonomy", "term"]
   description = "SampTA is a biennial interdisciplinary conference for mathematicians, engineers, and applied scientists."
   # PLACEHOLDER: Update contact email
   contactEmail = "sampta@example.org"
+  upcomingContentRawURL = "https://raw.githubusercontent.com/CentralSampTA/site-upcoming-content/main/content/upcoming.md"
+  upcomingContentSiteURL = "https://site-upcoming-content.netlify.app"
 
 [menu]
   [[menu.main]]

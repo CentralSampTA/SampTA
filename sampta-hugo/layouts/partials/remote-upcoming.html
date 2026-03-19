@@ -1,4 +1,5 @@
 {{- $body := replaceRE "(?s)^---.*?---\\r?\\n" "" .raw -}}
+{{- $remoteSite := replaceRE "/$" "" .siteURL -}}
 {{- $body = replace $body "<!--more-->" "__SAMPTA_MORE__" -}}
 {{- $body = replaceRE "(?s)<!--.*?-->" "" $body -}}
 {{- if .summaryOnly -}}
@@ -17,6 +18,8 @@
 {{- $body = replaceRE "(?i)\\s+srcdoc\\s*=\\s*(\"[^\"]*\"|'[^']*'|[^\\s>]+)" "" $body -}}
 {{- $body = replaceRE "(?i)(href|src)\\s*=\\s*['\"]?(javascript:|vbscript:|data:)[^'\"\\s>]*['\"]?" "$1=\"#\"" $body -}}
 {{- $html := $body | markdownify -}}
+{{- $html = replace $html "src=\"/images/" (printf "src=\"%s/images/" $remoteSite) -}}
+{{- $html = replace $html "src='/images/" (printf "src='%s/images/" $remoteSite) -}}
 {{- $html = replaceRE "(?i)\\s+on[a-z-]+\\s*=\\s*(\"[^\"]*\"|'[^']*'|[^\\s>]+)" "" $html -}}
 {{- $html = replaceRE "(?i)\\s+srcdoc\\s*=\\s*(\"[^\"]*\"|'[^']*'|[^\\s>]+)" "" $html -}}
 {{- $html = replaceRE "(?i)(href|src)\\s*=\\s*['\"]?(javascript:|vbscript:|data:)[^'\"\\s>]*['\"]?" "$1=\"#\"" $html -}}
