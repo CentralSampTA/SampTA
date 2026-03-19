@@ -2,9 +2,10 @@
 baseURL = "https://sampta.example.org/"  # PLACEHOLDER: Replace with actual site URL
 languageCode = "en"
 title = "SampTA — Sampling Theory and Applications"
+enableRobotsTXT = true
 # No external theme — using custom layouts
 # Disable unused features for faster builds
-disableKinds = ["taxonomy", "term", "RSS"]
+disableKinds = ["taxonomy", "term"]
 
 [params]
   description = "SampTA is a biennial interdisciplinary conference for mathematicians, engineers, and applied scientists."

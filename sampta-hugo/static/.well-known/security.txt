@@ -1,0 +1,5 @@
+# Update the contact address and canonical URL before going live.
+Contact: mailto:sampta@example.org
+Expires: 2027-03-19T00:00:00Z
+Preferred-Languages: en
+Canonical: https://sampta.example.org/.well-known/security.txt

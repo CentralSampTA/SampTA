@@ -1,0 +1,24 @@
+{
+  "name": "SampTA Conference Series",
+  "short_name": "SampTA",
+  "description": "The Sampling Theory and Applications conference series.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "minimal-ui",
+  "background_color": "#f7f8fa",
+  "theme_color": "#1b3a5c",
+  "icons": [
+    {
+      "src": "/images/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -2,9 +2,7 @@
 <div class="content-body">
   {{ $url := "https://raw.githubusercontent.com/CentralSampTA/site-upcoming-content/main/content/upcoming.md" }}
   {{ with resources.GetRemote $url }}
-    {{ $raw := .Content }}
-    {{ $body := replaceRE "(?s)^---.*?---\r?\n" "" $raw }}
-    {{ replace $body "<!--more-->" "" | markdownify }}
+    {{ partial "remote-upcoming.html" (dict "raw" .Content "summaryOnly" false) }}
   {{ else }}
     <p>Loading upcoming conference details...</p>
   {{ end }}

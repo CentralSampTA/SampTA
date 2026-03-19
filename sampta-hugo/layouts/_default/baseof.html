@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+{{ $logoPath := "" }}
+{{ if fileExists "static/images/logo.svg" }}
+  {{ $logoPath = "images/logo.svg" }}
+{{ else if fileExists "static/images/logo.png" }}
+  {{ $logoPath = "images/logo.png" }}
+{{ end }}
+{{ $faviconPNG := fileExists "static/images/favicon.png" }}
+{{ $faviconSVG := fileExists "static/images/favicon.svg" }}
+{{ $faviconICO := fileExists "static/images/favicon.ico" }}
+{{ $appleTouchIcon := fileExists "static/images/apple-touch-icon.png" }}
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — SampTA{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="theme-color" content="#1b3a5c">
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="{{ .MediaType.Type }}" title="{{ $.Site.Title }}" href="{{ .RelPermalink }}">{{ end }}
+  <link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
-  <link rel="icon" href="{{ "images/favicon.ico" | relURL }}" sizes="any">
-  <link rel="icon" href="{{ "images/favicon.svg" | relURL }}" type="image/svg+xml">
+  {{ if $faviconPNG }}<link rel="icon" href="{{ "images/favicon.png" | relURL }}" type="image/png" sizes="32x32">{{ end }}
+  {{ if $faviconSVG }}<link rel="icon" href="{{ "images/favicon.svg" | relURL }}" type="image/svg+xml">{{ end }}
+  {{ if $faviconICO }}<link rel="alternate icon" href="{{ "images/favicon.ico" | relURL }}">{{ end }}
+  {{ if $appleTouchIcon }}<link rel="apple-touch-icon" href="{{ "images/apple-touch-icon.png" | relURL }}" sizes="180x180">{{ end }}
 </head>
 <body>
 
   <header class="site-header">
     <div class="container">
       <a href="{{ "/" | relURL }}" class="site-logo">
-        <img src="{{ "images/logo.svg" | relURL }}" alt="" class="site-logo-img" onerror="this.style.display='none'">SampTA
+        {{ if $logoPath }}<img src="{{ $logoPath | relURL }}" alt="" class="site-logo-img">{{ end }}SampTA
         <span>Sampling Theory &amp; Applications</span>
       </a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">

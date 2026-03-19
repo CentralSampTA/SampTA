@@ -1,0 +1,17 @@
+{{ define "header" }}
+<section class="page-header">
+  <div class="container">
+    <h1>Page not found</h1>
+    <p class="subtitle">The address you requested does not exist on this site.</p>
+  </div>
+</section>
+{{ end }}
+
+{{ define "main" }}
+<section class="not-found">
+  <div class="card">
+    <p>The page may have moved, the link may be outdated, or the URL may be mistyped.</p>
+    <p><a href="{{ "/" | relURL }}" class="btn">Return to the homepage</a></p>
+  </div>
+</section>
+{{ end }}

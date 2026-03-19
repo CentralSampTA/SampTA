@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /conference-admin/
+
+Allow: /
+
+Sitemap: {{ "sitemap.xml" | absURL }}

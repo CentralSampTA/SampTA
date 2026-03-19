@@ -5,6 +5,40 @@
 document.addEventListener('DOMContentLoaded', function () {
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.querySelector('.site-nav');
+  var logo = document.querySelector('.site-logo-img');
+  var contentImages = document.querySelectorAll('.featured-event img, .content-body img');
+
+  function hideBrokenImage(img) {
+    var wrapper = img.closest('p');
+
+    if (wrapper) {
+      var onlyImageChild = wrapper.children.length === 1 && wrapper.firstElementChild === img;
+      var hasText = wrapper.textContent && wrapper.textContent.trim() !== '';
+
+      if (onlyImageChild && !hasText) {
+        wrapper.style.display = 'none';
+        return;
+      }
+    }
+
+    img.style.display = 'none';
+  }
+
+  if (logo) {
+    logo.addEventListener('error', function () {
+      logo.style.display = 'none';
+    });
+  }
+
+  contentImages.forEach(function (img) {
+    img.addEventListener('error', function () {
+      hideBrokenImage(img);
+    });
+
+    if (img.complete && typeof img.naturalWidth === 'number' && img.naturalWidth === 0) {
+      hideBrokenImage(img);
+    }
+  });
 
   if (toggle && nav) {
     toggle.addEventListener('click', function () {

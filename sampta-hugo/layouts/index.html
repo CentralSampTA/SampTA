@@ -14,13 +14,9 @@
 <section class="upcoming-featured">
   {{ $url := "https://raw.githubusercontent.com/CentralSampTA/site-upcoming-content/main/content/upcoming.md" }}
   {{ with resources.GetRemote $url }}
-    {{ $raw := .Content }}
-    {{ $body := replaceRE "(?s)^---.*?---\r?\n" "" $raw }}
-    {{ $parts := split $body "<!--more-->" }}
-    {{ $summary := index $parts 0 }}
     <div class="featured-event">
-      {{ $summary | markdownify }}
-      <p style="margin-top: 1rem;">
+      {{ partial "remote-upcoming.html" (dict "raw" .Content "summaryOnly" true) }}
+      <p class="featured-event-actions">
         <a href="{{ "/upcoming/" | relURL }}" class="btn">View full details →</a>
       </p>
     </div>

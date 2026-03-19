@@ -5,7 +5,7 @@ description: "Contact information for the SampTA conference series."
 ---
 
 <div class="card">
-<h2 style="margin-top:0;">General Inquiries</h2>
+<h2 class="mt-0">General Inquiries</h2>
 
 For questions about the SampTA conference series, including hosting future conferences or joining the steering committee, please contact:
 
