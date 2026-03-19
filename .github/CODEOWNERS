@@ -1,0 +1,6 @@
+# The Main Webmaster (You) owns everything by default
+* @D3prave
+
+# The Conference Organizer owns ONLY their specific page and the image folder
+sampta-hugo/content/upcoming.md @ConferenceOrganizerUsername
+sampta-hugo/static/images/ @ConferenceOrganizerUsername
