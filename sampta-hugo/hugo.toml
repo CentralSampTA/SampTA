@@ -2,8 +2,7 @@
 baseURL = "https://sampta.example.org/"  # PLACEHOLDER: Replace with actual site URL
 languageCode = "en"
 title = "SampTA — Sampling Theory and Applications"
-theme = ""  # No external theme — using custom layouts
-
+# No external theme — using custom layouts
 # Disable unused features for faster builds
 disableKinds = ["taxonomy", "term", "RSS"]
 
