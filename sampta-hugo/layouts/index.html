@@ -1,10 +1,21 @@
 {{ define "header" }}
+{{ $heroLogoPath := "" }}
+{{ if fileExists "static/images/logo.svg" }}
+  {{ $heroLogoPath = "images/logo.svg" }}
+{{ else if fileExists "static/images/logo.png" }}
+  {{ $heroLogoPath = "images/logo.png" }}
+{{ end }}
 <section class="page-header hero">
   <div class="container">
-    <h1>SampTA</h1>
-    <p class="subtitle">
-      International Conference on Sampling Theory and Applications
-    </p>
+    <div class="hero-brand">
+      {{ if $heroLogoPath }}<img src="{{ $heroLogoPath | relURL }}" alt="" class="hero-logo" width="64" height="64">{{ end }}
+      <div class="hero-copy">
+        <h1>SampTA</h1>
+        <p class="subtitle">
+          International Conference on Sampling Theory and Applications
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 {{ end }}

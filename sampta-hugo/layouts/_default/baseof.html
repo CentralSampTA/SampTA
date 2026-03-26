@@ -6,6 +6,14 @@
 {{ else if fileExists "static/images/logo.png" }}
   {{ $logoPath = "images/logo.png" }}
 {{ end }}
+{{ $styleVersion := "" }}
+{{ if fileExists "static/css/style.css" }}
+  {{ $styleVersion = md5 (readFile "static/css/style.css") }}
+{{ end }}
+{{ $scriptVersion := "" }}
+{{ if fileExists "static/js/main.js" }}
+  {{ $scriptVersion = md5 (readFile "static/js/main.js") }}
+{{ end }}
 {{ $faviconPNG := fileExists "static/images/favicon.png" }}
 {{ $faviconSVG := fileExists "static/images/favicon.svg" }}
 {{ $faviconICO := fileExists "static/images/favicon.ico" }}
@@ -19,7 +27,7 @@
   <link rel="canonical" href="{{ .Permalink }}">
   {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="{{ .MediaType.Type }}" title="{{ $.Site.Title }}" href="{{ .RelPermalink }}">{{ end }}
   <link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
-  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}{{ with $styleVersion }}?v={{ . }}{{ end }}">
   {{ if $faviconPNG }}<link rel="icon" href="{{ "images/favicon.png" | relURL }}" type="image/png" sizes="32x32">{{ end }}
   {{ if $faviconSVG }}<link rel="icon" href="{{ "images/favicon.svg" | relURL }}" type="image/svg+xml">{{ end }}
   {{ if $faviconICO }}<link rel="alternate icon" href="{{ "images/favicon.ico" | relURL }}">{{ end }}
@@ -30,8 +38,8 @@
   <header class="site-header">
     <div class="container">
       <a href="{{ "/" | relURL }}" class="site-logo">
-        {{ if $logoPath }}<img src="{{ $logoPath | relURL }}" alt="" class="site-logo-img">{{ end }}SampTA
-        <span>Sampling Theory &amp; Applications</span>
+        {{ if $logoPath }}<img src="{{ $logoPath | relURL }}" alt="" class="site-logo-img" width="64" height="64">{{ end }}
+        <span class="site-logo-title">SampTA</span>
       </a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
@@ -65,6 +73,6 @@
     </div>
   </footer>
 
-  <script src="{{ "js/main.js" | relURL }}"></script>
+  <script src="{{ "js/main.js" | relURL }}{{ with $scriptVersion }}?v={{ . }}{{ end }}"></script>
 </body>
 </html>
