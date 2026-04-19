@@ -9,10 +9,7 @@ description: "Contact information for the SampTA conference series."
 
 For questions about the SampTA conference series, including hosting future conferences or joining the steering committee, please contact:
 
-<!-- PLACEHOLDER: Replace with real contact email -->
-**Email:** [sampta@example.org](mailto:sampta@example.org)
-
-*Replace `sampta@example.org` with the actual contact address.*
+**Email:** [info@sampta.org](mailto:info@sampta.org)
 </div>
 
 ## Current Conference
@@ -24,7 +21,4 @@ For inquiries specific to the next upcoming SampTA conference, contact the local
 
 ## Website Maintenance
 
-<!-- PLACEHOLDER: Replace with actual website maintainer contact -->
-To report issues with this website or request content updates, contact the site maintainer at [webmaster@example.org](mailto:webmaster@example.org).
-
-*Replace `webmaster@example.org` with the actual maintainer address.*
+To report issues with this website or request content updates, contact the site maintainer at [webmaster@sampta.org](mailto:webmaster@sampta.org).

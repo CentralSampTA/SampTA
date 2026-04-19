@@ -1,5 +1,5 @@
 # Hugo site configuration for SampTA Conference Series
-baseURL = "https://sampta.example.org/"  # PLACEHOLDER: Replace with actual site URL
+baseURL = "https://sampta.org/"
 languageCode = "en"
 title = "SampTA — Sampling Theory and Applications"
 enableRobotsTXT = true
@@ -9,10 +9,9 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   description = "SampTA is a biennial interdisciplinary conference for mathematicians, engineers, and applied scientists."
-  # PLACEHOLDER: Update contact email
-  contactEmail = "sampta@example.org"
+  contactEmail = "info@sampta.org"
   upcomingContentRawURL = "https://raw.githubusercontent.com/CentralSampTA/site-upcoming-content/main/content/upcoming.md"
-  upcomingContentSiteURL = "https://site-upcoming-content.netlify.app"
+  upcomingContentSiteURL = "https://upcoming.sampta.org"
 
 [menu]
   [[menu.main]]

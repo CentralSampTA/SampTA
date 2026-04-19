@@ -8,13 +8,13 @@
 
 [[redirects]]
   from = "/conference-admin"
-  to = "https://site-upcoming-content.netlify.app/admin/"
+  to = "https://upcoming.sampta.org/admin/"
   status = 302
   force = true
 
 [[redirects]]
   from = "/conference-admin/*"
-  to = "https://site-upcoming-content.netlify.app/admin/"
+  to = "https://upcoming.sampta.org/admin/"
   status = 302
   force = true
 
