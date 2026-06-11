@@ -450,6 +450,16 @@ main {
   color: var(--color-text-muted);
   font-style: italic;
 }
+/* Align Name/Institution columns across stacked committee tables */
+@media (min-width: 768px) {
+  .committee-table {
+    table-layout: fixed;
+  }
+  .committee-table th:first-child,
+  .committee-table td:first-child {
+    width: 38%;
+  }
+}
 
 /* Responsive table — stacked on mobile */
 @media (max-width: 767px) {
