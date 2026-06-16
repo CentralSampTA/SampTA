@@ -4,12 +4,16 @@ This is the source code for the official **SampTA** (Sampling Theory and Applica
 
 The project uses a **Decoupled Hugo Architecture** to strictly isolate conference content from the main website infrastructure.
 
+> **Full technical reference:** see [ARCHITECTURE.md](ARCHITECTURE.md) for the complete stack, content-fetch mechanism, both CMS panels, the deploy webhook, hosting/DNS, and security. This README is the quick-start.
+
 ## 🏗 Project Architecture
 
-The website is split into two independent GitHub repositories:
+The website is split into two independent GitHub repositories under the `CentralSampTA` org:
 
-1.  **Main Website (`SampTA`)**: Contains the Hugo engine, themes, layouts, and core pages (About, Committee, etc.).
-2.  **Upcoming Content (`site-upcoming-content`)**: A dedicated repository for the "Upcoming Conference" text and images. This allows conference organizers to edit their content without ever touching the main site code. Keep this as a separate sibling clone at `/Users/deprave/Documents/site-upcoming-content`, not inside the main website repo.
+1.  **Main Website (`SampTA`)**: Contains the Hugo engine (no external theme — custom layouts), core pages (About, Committee, etc.), and the **master admin** CMS at `sampta.org/admin` (review-based editorial workflow, for maintainers). Hosted on Netlify at `sampta.org`.
+2.  **Upcoming Content (`site-upcoming-content`)**: A dedicated repository for the "Upcoming Conference" text and images, plus the **organizers' CMS** at `upcoming.sampta.org/admin` (immediate publish, for editors with access). This lets conference organizers edit content without ever touching the main site code. Keep it as a separate sibling clone (e.g. `/Users/deprave/Documents/site-upcoming-content`), **not** nested inside the main website repo.
+
+Both CMS panels are **Decap CMS** with a GitHub backend; editors sign in via a GitHub OAuth app brokered by Netlify's OAuth endpoint (configured in Netlify → Site configuration → Access & security → OAuth). The homepage and `/upcoming/` page fetch the upcoming content **at build time** from the content repo (see ARCHITECTURE.md §3).
 
 ---
 
@@ -33,7 +37,7 @@ git checkout dev
 ```
 
 ### 2. The Content Webhook
-Whenever an organizer clicks "Publish" in their isolated CMS, GitHub sends a **Webhook** signal to the main Netlify site. This forces the main site to rebuild instantly and fetch the new text from the content repository.
+Whenever an organizer clicks "Publish" in their isolated CMS, Decap pushes to the content repo's `main` branch. A GitHub Action (`trigger-sampta-rebuild.yml`) then pings a **Netlify build hook** (stored as the `NETLIFY_SAMPTA_BUILD_HOOK` secret) for the main site, forcing it to rebuild and refetch the new content. Freshness is guaranteed by `hugo.toml`'s disabled `getresource` cache (`maxAge = 0`), so each rebuild pulls the latest state.
 
 ---
 
