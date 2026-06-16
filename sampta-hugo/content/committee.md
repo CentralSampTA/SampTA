@@ -28,12 +28,12 @@ The SampTA steering committee oversees the long-term direction of the conference
 </thead>
 <tbody>
 <tr><td>Akram Aldroubi</td><td data-label="Institution:">Vanderbilt University, USA</td></tr>
-<tr><td>Helmut Boelcskei</td><td data-label="Institution:">ETH Zurich</td></tr>
-<tr><td>Ayush Bhandari</td><td data-label="Institution:">Imperial College</td></tr>
+<tr><td>Helmut Boelcskei</td><td data-label="Institution:">ETH Zurich, Switzerland</td></tr>
+<tr><td>Ayush Bhandari</td><td data-label="Institution:">Imperial College London, UK</td></tr>
 <tr><td>Yonina Eldar</td><td data-label="Institution:">Technion, Israel</td></tr>
-<tr><td>Felix Krahmer</td><td data-label="Institution:">Technical University of Munich</td></tr>
+<tr><td>Felix Krahmer</td><td data-label="Institution:">Technical University of Munich, Germany</td></tr>
 <tr><td>Farokh Marvasti</td><td data-label="Institution:">Sharif University of Technology, Iran</td></tr>
-<tr><td>Holger Rauhut</td><td data-label="Institution:">University of Munich</td></tr>
+<tr><td>Holger Rauhut</td><td data-label="Institution:">University of Munich, Germany</td></tr>
 <tr><td>Ahmed Zayed</td><td data-label="Institution:">DePaul University, USA</td></tr>
 </tbody>
 </table>
@@ -57,7 +57,7 @@ The SampTA steering committee oversees the long-term direction of the conference
 <tr><td>Rowland Higgins</td><td data-label="Institution:">Anglia Polytechnic University, UK</td></tr>
 <tr><td>Abdul Jerri</td><td data-label="Institution:">Clarkson University, USA</td></tr>
 <tr><td>Andi Kivinukk</td><td data-label="Institution:">Tallinn University, Estonia</td></tr>
-<tr><td>Yuri Lyubarskii</td><td data-label="Institution:">Norwegian University of Science and Technology</td></tr>
+<tr><td>Yuri Lyubarskii</td><td data-label="Institution:">Norwegian University of Science and Technology, Norway</td></tr>
 <tr><td>Gerhard Schmeisser</td><td data-label="Institution:">Erlangen-Nürnberg University, Germany</td></tr>
 <tr><td>Bruno Torrésani</td><td data-label="Institution:">Aix-Marseille Université, France</td></tr>
 <tr><td>Michael Unser</td><td data-label="Institution:">EPFL, Switzerland</td></tr>
