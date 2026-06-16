@@ -47,3 +47,11 @@ disableKinds = ["taxonomy", "term"]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+# Always refetch the remote "upcoming" content on every build.
+# Default getresource maxAge is -1 (cache forever), which serves stale
+# content across builds; 0 disables the cache so each deploy pulls fresh.
+[caches]
+  [caches.getresource]
+    dir = ":cacheDir/:project"
+    maxAge = 0
