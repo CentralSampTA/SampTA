@@ -7,7 +7,7 @@ description: "Contact information for the SampTA conference series."
 <div class="card">
 <h2 class="mt-0">General Inquiries</h2>
 
-For questions about the SampTA conference series, including hosting future conferences or joining the steering committee, please contact:
+For general questions about the SampTA conference series, please contact:
 
 **Email:** [info@sampta.org](mailto:info@sampta.org)
 </div>
@@ -15,13 +15,16 @@ For questions about the SampTA conference series, including hosting future confe
 <div class="card">
 <h2 class="mt-0">Mailing List</h2>
 
-To hear about upcoming conferences — save-the-dates, calls for papers, and registration deadlines — [join the SampTA mailing list](/newsletter/).
+Get occasional SampTA announcements, including save-the-dates, calls for papers, and registration deadlines.
+
+[Join the SampTA mailing list](/newsletter/).
 </div>
 
-## Current Conference
+<div class="card">
+<h2 class="mt-0">Current Conference</h2>
 
-<!-- PLACEHOLDER: Update with the next conference contact details when announced -->
-For inquiries specific to the next upcoming SampTA conference, contact the local organizers through the official conference website (to be announced).
+For SampTA 27 questions, use the [official SampTA27 website](https://www.uu.nl/en/research/sampta27) or contact the organizers at [sampta2027@uu.nl](mailto:sampta2027@uu.nl).
+</div>
 
 ---
 

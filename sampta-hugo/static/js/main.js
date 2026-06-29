@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var nav = document.querySelector('.site-nav');
   var logo = document.querySelector('.site-logo-img');
   var contentImages = document.querySelectorAll('.featured-event img, .content-body img');
+  var nextDeadlines = document.querySelectorAll('.next-deadline');
 
   function hideBrokenImage(img) {
     var wrapper = img.closest('p');
@@ -39,6 +40,41 @@ document.addEventListener('DOMContentLoaded', function () {
       hideBrokenImage(img);
     }
   });
+
+  function parseLocalDate(value) {
+    var parts = String(value || '').split('-').map(Number);
+
+    if (parts.length !== 3 || parts.some(isNaN)) {
+      return null;
+    }
+
+    return new Date(parts[0], parts[1] - 1, parts[2]);
+  }
+
+  function updateNextDeadline(container) {
+    var output = container.querySelector('.deadline-value');
+    var options = Array.prototype.slice.call(container.querySelectorAll('[data-date]'));
+    var today = new Date();
+    var todayStart = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+    var next = null;
+
+    options.some(function (option) {
+      var deadlineDate = parseLocalDate(option.getAttribute('data-date'));
+
+      if (deadlineDate && deadlineDate >= todayStart) {
+        next = option;
+        return true;
+      }
+
+      return false;
+    });
+
+    if (output) {
+      output.textContent = next ? next.textContent : container.getAttribute('data-empty-label');
+    }
+  }
+
+  nextDeadlines.forEach(updateNextDeadline);
 
   if (toggle && nav) {
     toggle.addEventListener('click', function () {

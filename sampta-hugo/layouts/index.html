@@ -22,14 +22,15 @@
 
 {{ define "main" }}
 
-<section class="upcoming-featured">
+<section class="upcoming-featured" aria-label="Next conference">
+  <p class="section-label">Next conference</p>
   {{ $url := .Site.Params.upcomingContentRawURL }}
   {{ with resources.GetRemote $url }}
     <div class="featured-event">
       {{ partial "remote-upcoming.html" (dict "raw" .Content "summaryOnly" true "siteURL" $.Site.Params.upcomingContentSiteURL) }}
       <p class="featured-event-actions">
         <a href="{{ "/upcoming/" | relURL }}" class="btn">View full details →</a>
-        <a href="https://www.uu.nl/en/research/sampta27" class="btn" target="_blank" rel="noopener">SampTA 2027 website →</a>
+        <a href="https://www.uu.nl/en/research/sampta27" class="btn btn-secondary" target="_blank" rel="noopener">Official SampTA27 website →</a>
       </p>
     </div>
   {{ else }}
@@ -41,29 +42,15 @@
 
 <hr class="section-divider">
 
-<section>
+<section class="home-intro">
   {{ .Content }}
 </section>
 
 <hr class="section-divider">
 
-<section class="newsletter-signup">
-  <div class="card">
-    <h2 class="mt-0">Join the mailing list</h2>
-    <p>Sign up to receive SampTA announcements.</p>
-    {{ with .Site.Params.newsletterSignupURL }}
-    <p><a href="{{ . }}" class="btn" target="_blank" rel="noopener">Subscribe to announcements →</a></p>
-    {{ else }}
-    <p class="text-muted">The sign-up form will be available here shortly.</p>
-    {{ end }}
-  </div>
-</section>
-
-<hr class="section-divider">
-
-<section>
+<section class="recent-conferences">
   <h2>Recent Conferences</h2>
-  <div class="quick-links limit-mobile">
+  <div class="quick-links">
 
     <div class="card">
       <h3>SampTA 2025</h3>
@@ -83,39 +70,22 @@
       <p><a href="https://sampta2019.sciencesconf.org" target="_blank" rel="noopener">Conference website →</a></p>
     </div>
 
-    <div class="card">
-      <h3>SampTA 2017</h3>
-      <p>Tallinn, Estonia<br>July 3–7, 2017</p>
-      <p><a href="https://web.archive.org/web/20170822202604/http://sites.ieee.org/estonia/2017/02/07/sampta-2017/" target="_blank" rel="noopener">Conference website →</a></p>
-    </div>
-
-    <div class="card">
-      <h3>SampTA 2015</h3>
-      <p>Washington, D.C., U.S.<br>May 25–29, 2015</p>
-      <p><a href="https://www.american.edu/cas/mathstat/sampta2015/" target="_blank" rel="noopener">Conference website →</a></p>
-    </div>
-
-    <div class="card">
-      <h3>SampTA 2013</h3>
-      <p>Bremen, Germany<br>July 1–5, 2013</p>
-      <p><a href="https://nuhagphp.univie.ac.at/event_NEW/make.php?event=sampta2013" target="_blank" rel="noopener">Conference website →</a></p>
-    </div>
-
   </div>
   <p><a href="{{ "/conferences/" | relURL }}">View all conferences →</a></p>
 </section>
 
 <hr class="section-divider">
 
-<section>
-  <h2>Quick Links</h2>
-  <ul>
-    <li><a href="{{ "/about/" | relURL }}">About SampTA</a> — history and scope of the conference series</li>
-    <li><a href="{{ "/conferences/" | relURL }}">Conference archive</a> — all meetings from 1995 to the present</li>
-    <li><a href="{{ "/committee/" | relURL }}">Steering committee</a> — members and governance</li>
-    <li><a href="{{ "/resources/" | relURL }}">Resources &amp; proceedings</a> — publications and related materials</li>
-    <li><a href="{{ "/contact/" | relURL }}">Contact</a> — reach the organizers</li>
-  </ul>
+<section class="newsletter-signup">
+  <div class="card">
+    <h2 class="mt-0">Join the mailing list</h2>
+    <p>Sign up to receive SampTA announcements.</p>
+    {{ with .Site.Params.newsletterSignupURL }}
+    <p><a href="{{ . }}" class="btn" target="_blank" rel="noopener">Subscribe to announcements →</a></p>
+    {{ else }}
+    <p class="text-muted">The sign-up form will be available here shortly.</p>
+    {{ end }}
+  </div>
 </section>
 
 {{ end }}
