@@ -1,7 +1,7 @@
 [build]
   base = "sampta-hugo"
   publish = "public"
-  command = "hugo --gc --minify --cleanDestinationDir"
+  command = "hugo --ignoreCache --gc --minify --cleanDestinationDir"
 
 [build.environment]
   HUGO_VERSION = "0.121.0"
