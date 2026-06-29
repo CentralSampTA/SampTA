@@ -12,6 +12,12 @@ disableKinds = ["taxonomy", "term"]
   contactEmail = "info@sampta.org"
   upcomingContentRawURL = "https://raw.githubusercontent.com/CentralSampTA/site-upcoming-content/main/content/upcoming.md"
   upcomingContentSiteURL = "https://upcoming.sampta.org"
+  # Public URL of the Brevo hosted sign-up page for the announcements list.
+  # Paste the form's shareable URL here once the Brevo form is created
+  # (see BREVO_SETUP.md, Part E/F). Leave empty to hide the sign-up button
+  # (a placeholder note shows instead). When set, the home-page card and the
+  # /newsletter/ page render a "Subscribe to announcements →" button.
+  newsletterSignupURL = "https://9955a7a7.sibforms.com/serve/MUIFACn_7YNTFOntRVLsEr08UzmVxikkdHr0oH-mRP1dH_YKEnhL-C1o3lmbFujdJsCoZiY4DmY29tc7e-3lp3oL7czJs1gXz8UU_D5suhczNS8SbFK2bi82jTFo_dqcvi-Bqef_YQx6kMMlI3FrfczKJkrmWNIn4Isvlwg0oYCV2xg6z-ROaWA5WAWYyLpf1U_MqlP-JueyxrQSyQ=="
 
 [menu]
   [[menu.main]]

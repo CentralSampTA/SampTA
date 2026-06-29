@@ -29,6 +29,7 @@
       {{ partial "remote-upcoming.html" (dict "raw" .Content "summaryOnly" true "siteURL" $.Site.Params.upcomingContentSiteURL) }}
       <p class="featured-event-actions">
         <a href="{{ "/upcoming/" | relURL }}" class="btn">View full details →</a>
+        <a href="https://www.uu.nl/en/research/sampta27" class="btn" target="_blank" rel="noopener">SampTA 2027 website →</a>
       </p>
     </div>
   {{ else }}
@@ -42,6 +43,20 @@
 
 <section>
   {{ .Content }}
+</section>
+
+<hr class="section-divider">
+
+<section class="newsletter-signup">
+  <div class="card">
+    <h2 class="mt-0">Join the mailing list</h2>
+    <p>Sign up to receive SampTA announcements.</p>
+    {{ with .Site.Params.newsletterSignupURL }}
+    <p><a href="{{ . }}" class="btn" target="_blank" rel="noopener">Subscribe to announcements →</a></p>
+    {{ else }}
+    <p class="text-muted">The sign-up form will be available here shortly.</p>
+    {{ end }}
+  </div>
 </section>
 
 <hr class="section-divider">

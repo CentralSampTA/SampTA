@@ -522,6 +522,15 @@ main {
   .quick-links.limit-mobile > :nth-child(n+4) { display: none; }
 }
 
+/* ===== NEWSLETTER SIGN-UP ===== */
+.newsletter-signup .card {
+  background: var(--color-highlight);
+  border-color: var(--color-highlight-border);
+}
+.newsletter-signup .card p:last-child {
+  margin-bottom: 0;
+}
+
 /* ===== SECTION DIVIDER ===== */
 .section-divider {
   border: none;

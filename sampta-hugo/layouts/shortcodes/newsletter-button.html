@@ -1,0 +1,5 @@
+{{- with .Site.Params.newsletterSignupURL -}}
+<p><a href="{{ . }}" class="btn" target="_blank" rel="noopener">Subscribe to announcements →</a></p>
+{{- else -}}
+<p class="text-muted">The sign-up form will be available here shortly. In the meantime, email <a href="mailto:info@sampta.org">info@sampta.org</a> to be added to the list.</p>
+{{- end -}}

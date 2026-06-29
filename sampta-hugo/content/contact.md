@@ -12,6 +12,12 @@ For questions about the SampTA conference series, including hosting future confe
 **Email:** [info@sampta.org](mailto:info@sampta.org)
 </div>
 
+<div class="card">
+<h2 class="mt-0">Mailing List</h2>
+
+To hear about upcoming conferences — save-the-dates, calls for papers, and registration deadlines — [join the SampTA mailing list](/newsletter/).
+</div>
+
 ## Current Conference
 
 <!-- PLACEHOLDER: Update with the next conference contact details when announced -->
