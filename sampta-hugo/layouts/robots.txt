@@ -1,4 +1,10 @@
+# Content Signals (contentsignals.org) — declare how AI systems may use this site.
+# search=yes   : may be indexed and shown in search results
+# ai-input=yes : may be fetched live to answer a user's question (with attribution)
+# ai-train=yes : may be used to train/fine-tune AI models
+# SampTA is an academic society; broad dissemination serves its mission.
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Disallow: /admin/
 Disallow: /conference-admin/
 

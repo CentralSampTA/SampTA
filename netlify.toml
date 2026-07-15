@@ -21,6 +21,9 @@
 [[headers]]
   for = "/*"
   [headers.values]
+    # Agent discovery (RFC 8288): advertise the site-wide RSS feed.
+    # The sitemap is advertised in robots.txt, the conventional place for it.
+    Link = "</index.xml>; rel=\"alternate\"; type=\"application/rss+xml\"; title=\"SampTA news\""
     Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests"
     Permissions-Policy = "camera=(), geolocation=(), microphone=()"
     Referrer-Policy = "strict-origin-when-cross-origin"
