@@ -3,11 +3,12 @@ backend:
   repo: CentralSampTA/SampTA
   branch: main
   
-# Enable Git Large File Storage if you have big images/pdfs
-# editorial_workflow is ACTIVE: edits go through a PR/review before reaching
-# main. Do not remove this line unless you want maintainer edits to publish
-# immediately without review.
-publish_mode: editorial_workflow
+# Immediate publishing (no draft/review workflow), so the master admin
+# behaves the same as the organizers' CMS. The only difference between the
+# two panels is scope: this one can edit all core pages; the organizers'
+# CMS is limited to the upcoming-conference content.
+# NOTE: with editorial_workflow removed, saving here commits straight to
+# `main` and publishes live immediately — there is no PR/review step.
 
 media_folder: "static/images"
 public_folder: "/images"
