@@ -117,4 +117,10 @@ const PagePreview = createClass({
 
 // Load the LIVE site stylesheet so the preview matches production.
 CMS.registerPreviewStyle(SITE_CSS);
-CMS.registerPreviewTemplate("pages", PagePreview);
+
+// "pages" is a FILE collection. Decap matches preview templates by FILE name
+// (not the collection name), so register PagePreview for each file. If you add
+// a new file to the "pages" collection in config.yml, add its name here too.
+["pages", "index", "about", "conferences", "committee", "contact", "resources"].forEach(function (name) {
+  CMS.registerPreviewTemplate(name, PagePreview);
+});
