@@ -9,8 +9,34 @@
 <body>
   <!-- Decap CMS requires this script here so the body exists -->
   <script src="https://unpkg.com/decap-cms@3.10.1/dist/decap-cms.js" integrity="sha384-cfeDbz01Pc3d/tDdxwcLyYE9bmTuSm9oSEkaqblVTYBG0eQ3a6koW/K3wUGSd/lG" crossorigin="anonymous"></script>
-  <a href="/" style="position: fixed; top: 10px; right: 10px; z-index: 1000; padding: 10px 15px; background: #1a365d; color: white; text-decoration: none; border-radius: 6px; font-family: sans-serif; font-size: 14px; font-weight: 600; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">Back to Website</a>
+  <a id="upcoming-shortcut" href="https://upcoming.sampta.org/admin/" target="_blank" rel="noopener" style="display: none; position: fixed; top: 54px; right: 10px; z-index: 1000; padding: 10px 15px; background: #2c5282; color: white; text-decoration: none; border-radius: 6px; font-family: sans-serif; font-size: 14px; font-weight: 600; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">Edit upcoming conference →</a>
+  <a id="back-to-website" href="/" style="display: none; position: fixed; top: 10px; right: 10px; z-index: 1000; padding: 10px 15px; background: #1a365d; color: white; text-decoration: none; border-radius: 6px; font-family: sans-serif; font-size: 14px; font-weight: 600; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">Back to Website</a>
   <!-- Bump ?v= whenever preview.js changes, so browsers don't serve a stale cached copy. -->
-  <script src="preview.js?v=3"></script>
+  <script src="preview.js?v=4"></script>
+  <script>
+    // Show the "Edit upcoming conference" shortcut only on the collection/
+    // dashboard views, not while editing an entry (where it would overlap the
+    // preview pane and its hint bar). Decap uses hash-based routing, e.g.
+    //   #/collections/pages                      -> list view  (show)
+    //   #/collections/pages/entries/committee    -> edit view  (hide)
+    //   #/collections/pages/new                  -> new entry  (hide)
+    (function () {
+      var links = [
+        document.getElementById('upcoming-shortcut'),
+        document.getElementById('back-to-website')
+      ].filter(Boolean);
+      if (!links.length) return;
+      function sync() {
+        var hash = window.location.hash || '';
+        var editing = /\/entries\//.test(hash) || /\/new(\/|$)/.test(hash);
+        links.forEach(function (el) { el.style.display = editing ? 'none' : 'block'; });
+      }
+      window.addEventListener('hashchange', sync);
+      sync();
+      // Decap renders asynchronously after load; re-check a few times.
+      setTimeout(sync, 500);
+      setTimeout(sync, 1500);
+    })();
+  </script>
 </body>
 </html>
