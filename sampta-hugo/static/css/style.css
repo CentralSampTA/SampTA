@@ -302,7 +302,11 @@ main {
 }
 
 .hero {
-  padding: 1.95rem 0 1.55rem;
+  padding: 0.75rem 0;
+  margin-bottom: 0;
+}
+.hero + main {
+  padding-top: 1rem;
 }
 .hero h1 {
   font-size: 2.65rem;
@@ -323,7 +327,7 @@ main {
 }
 
 .hero-logo {
-  height: 82px;
+  height: 56px;
   width: auto;
   flex-shrink: 0;
 }
@@ -337,18 +341,19 @@ main {
     text-align: center;
   }
   .hero-brand {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.85rem;
-    text-align: center;
+    text-align: left;
   }
   .hero-logo {
-    height: 68px;
+    height: 44px;
   }
   .hero h1 {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
   }
   .hero .subtitle {
     margin: 0 auto;
+    font-size: 0.9rem;
   }
 }
 
@@ -370,10 +375,12 @@ main {
   border-left: 6px solid var(--color-accent);
   border-radius: 0 6px 6px 0;
   box-shadow: 0 4px 14px rgba(0,0,0,0.05);
-  padding: 1.85rem;
+  padding: 1rem;
 }
 .featured-event h2 {
   margin-top: 0 !important;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 .featured-event .card {
   background: transparent;
@@ -389,11 +396,47 @@ main {
   max-width: 100%;
   height: auto;
 }
+.featured-event .event-banner {
+  margin-bottom: 0.5rem;
+}
+.featured-event .event-banner img {
+  display: block;
+  width: 100%;
+}
+.featured-event .event-kicker {
+  display: none;
+}
+.featured-event .event-facts {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+.featured-event .event-facts div {
+  padding: 0.5rem 0.6rem;
+}
+.featured-event .event-note {
+  font-size: 0.875rem;
+}
 .featured-event-actions {
-  margin-top: 1rem;
+  margin: 0.5rem 0 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+}
+@media (min-width: 560px) {
+  .featured-event .event-facts {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 559px) {
+  .featured-event .event-facts div {
+    display: grid;
+    grid-template-columns: 5.5rem minmax(0, 1fr);
+    gap: 0.5rem;
+    align-items: baseline;
+  }
+  .featured-event .event-facts dd {
+    margin-top: 0;
+  }
 }
 
 .event-summary {
