@@ -10,7 +10,7 @@ The project uses a **Decoupled Hugo Architecture** to strictly isolate conferenc
 
 The website is split into two independent GitHub repositories under the `CentralSampTA` org:
 
-1.  **Main Website (`SampTA`)**: Contains the Hugo engine (no external theme — custom layouts), core pages (About, Committee, etc.), and the **master admin** CMS at `sampta.org/admin` (review-based editorial workflow, for maintainers). Hosted on Netlify at `sampta.org`.
+1.  **Main Website (`SampTA`)**: Contains the Hugo engine (no external theme — custom layouts), core pages (About, Committee, etc.), and the **master admin** CMS at `sampta.org/admin` (immediate publish, for maintainers). Hosted on Netlify at `sampta.org`.
 2.  **Upcoming Content (`site-upcoming-content`)**: A dedicated repository for the "Upcoming Conference" text and images, plus the **organizers' CMS** at `upcoming.sampta.org/admin` (immediate publish, for editors with access). This lets conference organizers edit content without ever touching the main site code. Keep it as a separate sibling clone (e.g. `/Users/deprave/Documents/site-upcoming-content`), **not** nested inside the main website repo.
 
 Both CMS panels are **Decap CMS** with a GitHub backend; editors sign in via a GitHub OAuth app brokered by Netlify's OAuth endpoint (configured in Netlify → Site configuration → Access & security → OAuth). The homepage and `/upcoming/` page fetch the upcoming content **at build time** from the content repo (see ARCHITECTURE.md §3).

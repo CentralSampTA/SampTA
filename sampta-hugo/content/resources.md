@@ -6,7 +6,7 @@ description: "Publications, proceedings, and resources related to the SampTA con
 
 ## Conference Proceedings
 
-Since 2015, SampTA conference proceedings have been published and indexed in **IEEE Xplore**. Earlier contributions were published in special issues of the journal *Sampling Theory in Signal and Image Processing* (STSIP).
+Since 2015, SampTA conference proceedings have been published and indexed in **IEEE Xplore**. Earlier contributions were published in special issues of the journal *Sampling Theory in Signal and Image Processing* (STSIP), which continues today as *Sampling Theory, Signal Processing, and Data Analysis* (SaSiDa).
 
 ### IEEE Xplore Proceedings
 
@@ -20,14 +20,14 @@ Since 2015, SampTA conference proceedings have been published and indexed in **I
 
 ## Journal
 
-**[Sampling Theory in Signal and Image Processing (STSIP)](https://www.stsip.org/)** is an international journal closely associated with the SampTA conference series. The journal publishes original research articles and survey papers on all aspects of sampling theory and its applications.
+**[Sampling Theory, Signal Processing, and Data Analysis (SaSiDa)](https://www.springer.com/journal/43670)** (Springer, formerly *Sampling Theory in Signal and Image Processing*, STSIP) is an international journal closely associated with the SampTA conference series. The journal publishes original research articles and survey papers on all aspects of sampling theory and its applications.
 
 ---
 
 ## Related Organizations
 
 - [IEEE Signal Processing Society](https://signalprocessingsociety.org/)
-- [NuHAG — Numerical Harmonic Analysis Group](https://www.univie.ac.at/nuhag/) (University of Vienna)
+- [NuHAG — Numerical Harmonic Analysis Group](https://www.nuhag.eu/) (University of Vienna)
 
 ---
 

@@ -21,7 +21,7 @@ All of these topics have received a large degree of attention from machine learn
 
 SampTA features plenary talks by prominent speakers, special sessions on selected topics reflecting the current trends in sampling theory and its applications to the engineering sciences, as well as regular sessions about traditional topics in sampling theory.
 
-Contributions from authors attending the SampTA conferences are usually published in special issues of [*Sampling Theory in Signal and Image Processing*](https://www.stsip.org/) (STSIP), an international journal dedicated to sampling theory and its applications. The proceedings of SampTA 2015 were indexed in [IEEE Xplore](https://ieeexplore.ieee.org/).
+Contributions from authors attending the SampTA conferences are usually published in special issues of *Sampling Theory in Signal and Image Processing* (STSIP), an international journal dedicated to sampling theory and its applications, now continued as [*Sampling Theory, Signal Processing, and Data Analysis*](https://www.springer.com/journal/43670) (SaSiDa). The proceedings of SampTA 2015 were indexed in [IEEE Xplore](https://ieeexplore.ieee.org/).
 
 ---
 
@@ -39,4 +39,4 @@ A complete list of all meetings is available on the [conference archive](/confer
 
 ## Community & Announcements
 
-The biennial meetings are announced in various Mathematics and Engineering Calendars, including the [Mathematics Calendar](https://www.ams.org/meetings/calendar/mathcal) of the [American Mathematical Society](https://www.ams.org/), the [Numerical Harmonic Analysis Group (NuHAG)](https://www.univie.ac.at/nuhag/) at the University of Vienna, the Norbert Wiener Center at the University of Maryland, and the [IEEE Signal Processing Society](https://signalprocessingsociety.org/).
+The biennial meetings are announced in various Mathematics and Engineering Calendars, including the [Mathematics Calendar](https://www.ams.org/meetings/calendar/mathcal) of the [American Mathematical Society](https://www.ams.org/), the [Numerical Harmonic Analysis Group (NuHAG)](https://www.nuhag.eu/) at the University of Vienna, the Norbert Wiener Center at the University of Maryland, and the [IEEE Signal Processing Society](https://signalprocessingsociety.org/).
