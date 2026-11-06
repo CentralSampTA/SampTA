@@ -17,6 +17,6 @@ The SampTA mailing list is a low-volume announcement channel. Subscribers receiv
 
 ## What to expect
 
-We send only a handful of emails per conference cycle, and only about the SampTA conference series. We do not share subscriber addresses with third parties.
+We send only a handful of emails per conference cycle, and only about the SampTA conference series. We do not share subscriber addresses with third parties. For details on how your data is handled, see our [privacy notice](/privacy/).
 
 For general questions, see the [contact page](/contact/).
